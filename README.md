@@ -59,7 +59,7 @@ Este repositório é disponibilizado unicamente para fins de análise de código
 Se você encontrar bugs, tiver sugestões ou quiser discutir funcionalidades, por favor, faça contato pelos meios abaixo.
 
 
-*## Contato
+* ## Contato
 Gustavo Henrique Oliveira de Almeides
 
 LinkedIn: https://www.linkedin.com/in/gustavo-henrique-oliveira-de-almeides-0a6761234/
