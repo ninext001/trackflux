@@ -12,20 +12,20 @@ Este projeto consiste em uma aplicação web (PWA) e mobile, desenvolvida em Rea
 
 O TrackFlux oferece um conjunto robusto de módulos para cobrir diversas áreas da gestão industrial:
 
-* [cite_start]**Dashboard Interativo:** Visão geral e métricas de produção, incluindo status de produções, tendências diárias/semanais e distribuição por produto/departamento. [cite: 1]
-* **Cadastro de Produtos:** Gerenciamento completo de produtos, incluindo código, nome, marca, tipo (Produto Acabado, Matéria Prima, Embalagem, etc.), unidade de medida e status de atividade. [cite_start]Permite exportação e importação via XLSX. [cite: 11]
-* [cite_start]**Classificações Dinâmicas:** Gerenciamento de classificações personalizáveis para unidades de medida, departamentos, marcas e tipos de produto. [cite: 7]
-* **Gestão de Formulações:** Cadastro e edição de fórmulas de produtos, com itens de receita (matérias-primas, produtos intermediários) e embalagens, incluindo quantidades inteiras e por peso. [cite_start]Suporta reordenação de itens por arrastar e soltar. [cite: 1, 9, 10]
-* [cite_start]**Diário de Produção:** Registro e acompanhamento diário das produções, com detalhes de produtos, lotes, quantidades, status (Pendente, Em Produção, Concluído) e divergências. [cite: 1, 4]
-* **Calendário de Produção:** Visualize e gerencie a programação de produção por mês, semana ou dia. [cite_start]Permite reordenar a prioridade das produções no dia via drag-and-drop. [cite: 14]
-* [cite_start]**Relatórios de Produção:** Relatórios detalhados de programação, agrupados por status e departamento, com opção de exportação para XLSX. [cite: 5]
-* [cite_start]**Separação de Materiais:** Calcula as quantidades totais de matérias-primas e embalagens necessárias para as produções pendentes e em andamento, facilitando a separação. [cite: 15]
-* **Tech Planning (Planejamento de Produção PCP):** Módulo para importação de planilhas (VCP, estoque de MP e PA, EVA) para acionar um processo de planejamento inteligente (via n8n), que gera um plano de produção. [cite_start]Os resultados podem ser aprovados e importados como produções no sistema. [cite: 16]
-* [cite_start]**Gestão de Produção Gráfica:** Módulo dedicado para controle de produções da gráfica, com rastreamento de tintas e filmes utilizados, cálculo de custos (CMV, mão de obra, tributos) e status de faturamento (com número de nota fiscal). [cite: 6, 8]
-* [cite_start]**Relatórios da Gráfica:** Relatórios financeiros e de produção específicos para a área gráfica, incluindo faturamento diário e distribuição de produtos. [cite: 17]
-* **Gestão de Usuários e Permissões:** Controle de acesso com diferentes classes de usuário (Administrador, Staff, Normal) e permissões granulares por módulo. [cite_start]Funcionalidade de banimento de usuários. [cite: 12, 13]
-* [cite_start]**Perfis de Usuário:** Usuários podem gerenciar suas informações pessoais e alterar senhas. [cite: 18]
-* [cite_start]**Seleção de Ambiente de Banco de Dados:** Permite alternar entre ambientes de produção e teste (Reforpan/Teste). [cite: 19]
+* **Dashboard Interativo:** Visão geral e métricas de produção, incluindo status de produções, tendências diárias/semanais e distribuição por produto/departamento. [cite: 1]
+* **Cadastro de Produtos:** Gerenciamento completo de produtos, incluindo código, nome, marca, tipo (Produto Acabado, Matéria Prima, Embalagem, etc.), unidade de medida e status de atividade. Permite exportação e importação via XLSX. [cite: 11]
+* **Classificações Dinâmicas:** Gerenciamento de classificações personalizáveis para unidades de medida, departamentos, marcas e tipos de produto. [cite: 7]
+* **Gestão de Formulações:** Cadastro e edição de fórmulas de produtos, com itens de receita (matérias-primas, produtos intermediários) e embalagens, incluindo quantidades inteiras e por peso. Suporta reordenação de itens por arrastar e soltar. [cite: 1, 9, 10]
+* **Diário de Produção:** Registro e acompanhamento diário das produções, com detalhes de produtos, lotes, quantidades, status (Pendente, Em Produção, Concluído) e divergências. [cite: 1, 4]
+* **Calendário de Produção:** Visualize e gerencie a programação de produção por mês, semana ou dia. Permite reordenar a prioridade das produções no dia via drag-and-drop. [cite: 14]
+* **Relatórios de Produção:** Relatórios detalhados de programação, agrupados por status e departamento, com opção de exportação para XLSX. [cite: 5]
+* **Separação de Materiais:** Calcula as quantidades totais de matérias-primas e embalagens necessárias para as produções pendentes e em andamento, facilitando a separação. [cite: 15]
+* **Tech Planning (Planejamento de Produção PCP):** Módulo para importação de planilhas (VCP, estoque de MP e PA, EVA) para acionar um processo de planejamento inteligente (via n8n), que gera um plano de produção. Os resultados podem ser aprovados e importados como produções no sistema. [cite: 16]
+* **Gestão de Produção Gráfica:** Módulo dedicado para controle de produções da gráfica, com rastreamento de tintas e filmes utilizados, cálculo de custos (CMV, mão de obra, tributos) e status de faturamento (com número de nota fiscal). [cite: 6, 8]
+* **Relatórios da Gráfica:** Relatórios financeiros e de produção específicos para a área gráfica, incluindo faturamento diário e distribuição de produtos. [cite: 17]
+* **Gestão de Usuários e Permissões:** Controle de acesso com diferentes classes de usuário (Administrador, Staff, Normal) e permissões granulares por módulo. Funcionalidade de banimento de usuários. [cite: 12, 13]
+* **Perfis de Usuário:** Usuários podem gerenciar suas informações pessoais e alterar senhas. [cite: 18]
+* **Seleção de Ambiente de Banco de Dados:** Permite alternar entre ambientes de produção e teste (Reforpan/Teste). [cite: 19]
 
 ## Tecnologias Utilizadas
 
@@ -50,17 +50,17 @@ O TrackFlux oferece um conjunto robusto de módulos para cobrir diversas áreas 
 
 O banco de dados é modelado para suportar as complexas operações de gestão. As principais tabelas e funcionalidades são:
 
-* [cite_start]**`production_days`**: Registra os dias de produção. [cite: 2]
-* **`productions`**: Detalhes das produções diárias, incluindo produtos, lotes, quantidades, status, código do produto, número de transação, quantidade programada e divergências. [cite_start]Suporta ordem de exibição personalizada via `display_order` (para drag-and-drop no calendário). [cite: 3, 4, 14, 21]
-* [cite_start]**`products`**: Cadastro de todos os produtos, com código, nome, marca, tipo, unidade de medida, status de atividade e relacionamento com departamento e classificações. [cite: 3, 11]
-* [cite_start]**`formulations`**: Armazena as fórmulas dos produtos, ligadas a um `product_id` e contendo o `yield` (rendimento) da formulação. [cite: 9, 10]
-* [cite_start]**`formulation_items`**: Detalha os componentes de cada formulação (receita ou embalagem), com referências a `product_id`, quantidades e uma `position` para reordenação. [cite: 9, 10, 19]
-* [cite_start]**`classifications`**: Tabela centralizada para gerenciar unidades de medida, departamentos, marcas e tipos de produto, permitindo flexibilidade na categorização. [cite: 7]
-* [cite_start]**`user_profiles`**: Armazena informações adicionais do usuário (nome, classe, status de banimento, avatar). [cite: 12, 13, 20]
-* [cite_start]**`user_permissions`**: Define quais módulos cada usuário pode acessar. [cite: 12]
-* [cite_start]**`graphics_production_days`**: Tabela específica para dias de produção da área gráfica. [cite: 6]
-* [cite_start]**`graphics_productions`**: Produções da área gráfica, incluindo status, faturamento, custos (CMV, custo unitário, custo total), número de nota fiscal e data de faturamento. [cite: 6, 8]
-* [cite_start]**`graphics_production_inks` / `graphics_production_films`**: Tabelas de relacionamento para detalhar as tintas e filmes usados em cada produção gráfica. [cite: 6]
+* **`production_days`**: Registra os dias de produção. [cite: 2]
+* **`productions`**: Detalhes das produções diárias, incluindo produtos, lotes, quantidades, status, código do produto, número de transação, quantidade programada e divergências. Suporta ordem de exibição personalizada via `display_order` (para drag-and-drop no calendário). [cite: 3, 4, 14, 21]
+* **`products`**: Cadastro de todos os produtos, com código, nome, marca, tipo, unidade de medida, status de atividade e relacionamento com departamento e classificações. [cite: 3, 11]
+* **`formulations`**: Armazena as fórmulas dos produtos, ligadas a um `product_id` e contendo o `yield` (rendimento) da formulação. [cite: 9, 10]
+* **`formulation_items`**: Detalha os componentes de cada formulação (receita ou embalagem), com referências a `product_id`, quantidades e uma `position` para reordenação. [cite: 9, 10, 19]
+* **`classifications`**: Tabela centralizada para gerenciar unidades de medida, departamentos, marcas e tipos de produto, permitindo flexibilidade na categorização. [cite: 7]
+* **`user_profiles`**: Armazena informações adicionais do usuário (nome, classe, status de banimento, avatar). [cite: 12, 13, 20]
+* **`user_permissions`**: Define quais módulos cada usuário pode acessar. [cite: 12]
+* **`graphics_production_days`**: Tabela específica para dias de produção da área gráfica. [cite: 6]
+* **`graphics_productions`**: Produções da área gráfica, incluindo status, faturamento, custos (CMV, custo unitário, custo total), número de nota fiscal e data de faturamento. [cite: 6, 8]
+* **`graphics_production_inks` / `graphics_production_films`**: Tabelas de relacionamento para detalhar as tintas e filmes usados em cada produção gráfica. [cite: 6]
 
 ## Como Configurar o Projeto
 
